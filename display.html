@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            margin-top: 20px;
+        }
+        h1, h2 {
+            margin: 5px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .student-info {
+            display: flex;
+            align-items: center;
+            border: 3px solid black;
+            padding: 15px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+        .student-data {
+            flex: 1;
+            font-size: 12px;
+        }
+        .student-info img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bulacan State University</h1>
+    <h2>Library Users</h2>
+</header>
+
+<div class="container" id="student-infos">
+</div>
+
+<script>
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            displayUsers(this);
+        }
+    };
+    xhttp.open("GET", "maryallyson_caba.xml", true);
+    xhttp.send();
+    
+    function displayUsers(xml) { 
+        var xmlDoc = xml.responseXML;
+        var users = xmlDoc.getElementsByTagName("student");
+        var output = "";
+    
+        for (var i = 0; i < users.length; i++) {
+            var picture = users[i].getElementsByTagName("picture")[0].childNodes[0].nodeValue;
+            var name = users[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
+            var course = users[i].getElementsByTagName("course")[0].childNodes[0].nodeValue;
+            var yearLevel = users[i].getElementsByTagName("yearLevel")[0].childNodes[0].nodeValue;
+            var adviser = users[i].getElementsByTagName("adviser")[0].childNodes[0].nodeValue;
+            var schoolYear = users[i].getElementsByTagName("schoolYear")[0].childNodes[0].nodeValue;
+            
+            output += "<div class='student-info'>" +
+                        "<div class='student-data'>" +
+                            "<strong>Name:</strong> " + name + "<br>" +
+                            "<strong>Course:</strong> " + course + "<br>" +
+                            "<strong>Year Level / Section:</strong> " + yearLevel + "<br>" +
+                            "<strong>Adviser:</strong> " + adviser + "<br>" +
+                            "<strong>School Year:</strong> " + schoolYear + "<br><br>" +
+                        "</div>" +
+                        "<img src='" + picture + "' alt='" + name + "'>" +
+                      "</div>";
+        }
+    
+        document.getElementById("student-infos").innerHTML = output;
+    }
+</script>
+</body>
+</html>

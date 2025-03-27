@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219986.png</picture>
+        <name>Juan Dela Cruz</name>
+        <course>BSIT</course>
+        <yearLevel>3A-G1</yearLevel>
+        <adviser>Mr. Sheldon V. Arenas</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219969.png</picture>
+        <name>Mary Allyson Caba</name>
+        <course>BSIT</course>
+        <yearLevel>3B-G1</yearLevel>
+        <adviser>Mrs. Noemi P. Reyes</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219986.png</picture>
+        <name>Keith Christopher Punla</name>
+        <course>BSIT</course>
+        <yearLevel>3E-G1</yearLevel>
+        <adviser>Mrs. Teresita S. Mangahas</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219969.png</picture>
+        <name>Celine Inagaki</name>
+        <course>BSIS</course>
+        <yearLevel>2A-G2</yearLevel>
+        <adviser>Mrs. Melanie Orbeso</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219986.png</picture>
+        <name>Ung Choi</name>
+        <course>BSIT</course>
+        <yearLevel>4F-G2</yearLevel>
+        <adviser>Mr. Jorge Caba</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219969.png</picture>
+        <name>Achi Miya</name>
+        <course>BLIS</course>
+        <yearLevel>2H-G1</yearLevel>
+        <adviser>Ms. Mari Jennifer Racpan</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219986.png</picture>
+        <name>Kusuo Saiki</name>
+        <course>BSIT</course>
+        <yearLevel>1G-G2</yearLevel>
+        <adviser>Mr. Riki Nendou</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219969.png</picture>
+        <name>Kyouko Hori</name>
+        <course>BLIS</course>
+        <yearLevel>2B-G1</yearLevel>
+        <adviser>Mr. Izumi Miyamura</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219986.png</picture>
+        <name>Kei Tsukishima</name>
+        <course>BSIT</course>
+        <yearLevel>4D-G1</yearLevel>
+        <adviser>Mr. Angelo Reyes</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+    <student>
+        <picture>https://cdn-icons-png.flaticon.com/512/219/219969.png</picture>
+        <name>Sophie Hatter</name>
+        <course>BSIT</course>
+        <yearLevel>1C-G2</yearLevel>
+        <adviser>Mr. Jayson Batoon</adviser>
+        <schoolYear>2025-2026</schoolYear>
+    </student>
+</students>
